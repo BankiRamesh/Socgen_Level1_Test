@@ -1,0 +1,24 @@
+<div ng-controller="sgController" ng-if="hidelogin">
+<div align="left" style="float: left;width: 15%">
+<h4>User Login</h4>
+	<input class="form-control"  type="text" ng-model="userid"  placeholder=" User Id" required></input>
+	<br></br>
+	<input class="form-control" type="password" ng-model="password" placeholder=" Password" required></input>
+	<br></br>
+	<button class="btn btn-primary" ng-click="login()">Login</button><br></br>
+	<div ng-show="userExitOrNot">UserId or Passoword wrong, please enter valid one's</div>
+</div>
+<div align="right" style="float: right;width: 15%;">
+<h4 align="center">New User Login</h4>
+<input class="form-control" type="text" ng-model="userName"  placeholder=" User Name" required></input>
+	<br></br>
+	<input class="form-control" type="text" ng-model="user"  placeholder=" User Id" required></input><br></br>
+	<input class="form-control" type="password" ng-model="pword" placeholder=" Password" required></input>
+	<br></br>
+	<input class="form-control" type="date" ng-model="dob" placeholder="DOB" required></input><br></br>
+	<input class="form-control" type="number" ng-model="mobileno" placeholder="Mobiole Numbner" required></input><br></br>
+	<button class="btn btn-primary" ng-click="newUser()">CreateUser</button>
+	<div ng-show="created">Your account created successfully, please login now</div> 	
+	
+</div>
+</div>

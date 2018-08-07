@@ -1,0 +1,16 @@
+<div >
+<div align="center">
+<h1 style="color: green;">Welcome to Hot Coffee<h1>
+</div>
+<div ng-if="hideHeader">
+<div align="left" style="float: right;">
+Login User: {{loginuser}} Time:  {{todayDate | date:'medium'}}
+<button class="btn btn-danger" ng-click="logout()" >Logout</button>
+</div>
+<div>
+<button class="btn btn-primary" ng-click="newOrder()" ui-sref="newOrder">New Order</button>
+<button class="btn btn-primary" ng-click="orderList()" ui-sref="orderList">Orders List</button>
+</div>
+</div>
+<div ui-view></div>
+</div>

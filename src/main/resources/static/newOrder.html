@@ -1,0 +1,43 @@
+<div align="center" ng-controller="sgOrderController">
+<h2>New Order</h2>
+<div align="center">
+Customer Name:<input type="text" ng-model="custName" class="form-control form-control-sm" style="width: 150px"><br></br>
+<input type="checkbox" ng-model="hotCoffee"  ng-change="order()"> Hot Coffee 
+					 <select class="selectpicker" ng-model="numhot" ng-change="order()"
+						ng-init='numhot="1"' >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select> 
+				</div>
+<br></br>
+<div align="center">
+<input type="checkbox" ng-model="coldCoffe" ng-change="order()">Cold Coffee
+					<select class="selectpicker" ng-model="numcold" ng-change="order()"	
+						ng-init='numcold="1"' >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select> 
+				</div> <br></br>
+<br></br>
+				
+		<div style="color: green">	
+		<div ng-if="showBill">
+		<div ng-if="hotCoffee">Hot Coffee  :{{numhot}}  Price :{{numhot*10}}<br></br></div>
+		<div ng-if="coldCoffe">Cold Coffee  :{{numcold}}  Price :{{numcold*12}}<br></br></div>
+		Total Amount: {{total}} <br></br>
+		
+		
+<button class="btn btn-primary" ng-click="submit()">Submit</button>
+		
+<button class="btn btn-primary" ng-click="cancle()">Cancle</button>
+		
+		</div>
+		</div>
+</div>				
+				
