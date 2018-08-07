@@ -15,5 +15,7 @@ Right click on project-> Maven-> Update the project
 
 mvn spring-boot:run   or   Rgiht click on project-> run-Spring Boot App
 
-you can  User Id:Banki and Password:banki , or you can create your onw credentials 
 
+Enter the url in browser :    http://localhost:8088/sg/  
+
+you can  User Id:Banki and Password:banki , or you can create your onw credentials 
