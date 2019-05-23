@@ -18,4 +18,4 @@ mvn spring-boot:run   or   Rgiht click on project-> run-Spring Boot App
 
 Enter the url in browser :    http://localhost:8088/sg/  
 
-you can  User Id:Banki and Password:banki , or you can create your onw credentials 
+you can  Use User Id:Banki and Password:banki , or you can create your onw credentials 
