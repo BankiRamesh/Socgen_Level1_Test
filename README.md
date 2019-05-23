@@ -5,7 +5,7 @@ JAVA, Spring-boot, Angularjs, MongoDB
 
 Steps for run the project:
 
-we should connect the our own network(i used my own mongoDB drivers , so it may be not connect throw office network)
+we should connect the our own network(i used my own mongoDB drivers , so it may be not connect through office network)
 
 git clone 
 
